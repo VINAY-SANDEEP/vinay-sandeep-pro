@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Two Numbers</title>
+    <link rel="stylesheet" href="can.css">
+    <script src="can.js"></script>
+    <style>#mybox{
+      background-color: lightblue;
+      width: 200px;
+      height: 180px;
+     font-size: 7.5rem;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+    }</style>
+</head>
+<body>
+    <marquee behavior="" direction="">welcome intro </marquee>
+    <h1 id="welcome">Hello</h1>
+    <label for="">Enter your name :</label>
+    <input type="text" id="name">
+    <br>
+    <br>
+    <button onclick="intro()">press it</button>
+    <hr>
+    <marquee behavior="" direction="">calculator</marquee>
+    <h1 id="Adding">Adding Two Numbers</h1>
+    <label for="num1">Enter a number:</label>
+    <input type="text" id="num1">
+    <br><br>
+    <label for="num2">Enter another number:</label>
+    <input type="text" id="num2">
+    <br><br>
+    <button onclick="addNumbers()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiple()">X</button>
+    <button onclick="divide()">/</button>
+    <h1 id="answer"></h1>
+    <hr>
+    <marquee behavior="" direction="">Counter</marquee>
+  <label for="" id="label">0</label>
+  <br>
+  <br>
+   <button id="increase">increase</button>
+   <button id="decrease" >decrease</button>
+  <hr>
+  <hr>
+  <marquee behavior="" direction="">Age to watch video's</marquee>
+  <br>
+    <label for="" id="age_ne"> Enter your age :</label>
+    <input type="text" id="age">
+    <br>
+    <br>
+    <button onclick="video()">Tell me fast</button>
+    <p id="view_result"></p>
+    <hr>
+    <marquee behavior="" direction="">fun with name</marquee>
+    <label for="" id="super">Enter your Email id : </label>
+    <input type="email" id="email">
+    <h1 id="vachamu"></h1>
+    <button onclick="email()">Verify your name</button>
+    <hr>
+    <marquee behavior="" direction="">Aditya collage of enginerring </marquee>
+     <label for="">Enter here username :</label>
+     <input type="text" id="roll">
+     <br><br>
+     <label for="">Enter here password :</label>
+     <input type="password" id="roll2">
+     <br><br>
+     <button onclick="acoe()">Check it</button>
+     <p id="attend"></p>
+     <hr>
+     <marquee behavior="" direction="">Thank you for entering our game</marquee>
+     <label for=""> Enter here a number</label>
+     <input type="text" id="number_game">
+     <br>
+     <br>
+     <button onclick="game_number()">Game start</button>
+     <h1 id="end"></h1>
+     <hr>
+     <marquee behavior="" direction="">enter here to convert temperature</marquee>
+     <label for="" id="temp_name">Enter here temperature</label>
+     <input type="text" id="just_num">
+     <br>
+     <input type="radio" id="celsius">
+     <label for="">celsius</label>
+     <input type="radio" id="fahrenheit">
+     <label for="">fahrenheit</label>
+     <br>
+     <br>
+      <button onclick="temperature()">for check</button>
+      <p id="temp_check"></p>
+      <hr>
+       <marquee behavior="" direction="">Image generator</marquee>
+       <button onclick="dice()" style="width:200px; height: 100px; ">Roll</button>
+       <br>
+       <img id="image-element">
+       <marquee behavior="" direction="">wait some time</marquee>
+       <p id="promo"></p>
+       <br>
+    <div id="numbers1"></div>
+    <div id="numbers2"></div>
+    <div id="numbers3"></div>
+    <div id="numbers4"></div>
+    <button onclick="adho()">press</button>
+  <marquee behavior="" direction="">welcome to time</marquee>
+  <button onclick="lets_run()">press it for time</button>
+  <h1 id="clock">00:00:00</h1>
+<marquee behavior="" direction="">calculator</marquee>
+<div id="calculator">
+  <input type="text" id="display">
+  <div id="keys">
+    <button onclick="appendtodisplay('+')">+</button>
+    <button onclick="appendtodisplay('7')">7</button>
+    <button onclick="appendtodisplay('8')">8</button>
+    <button onclick="appendtodisplay('9')">9</button>
+    <br>
+    <button onclick="appendtodisplay('-')">-</button>
+    <button onclick="appendtodisplay('4')">4</button>
+    <button onclick="appendtodisplay('5')">5</button>
+    <button onclick="appendtodisplay('6')">6</button>
+    <br>
+    <button onclick="appendtodisplay('*')">*</button>
+    <button onclick="appendtodisplay('1')">1</button>
+    <button onclick="appendtodisplay('2')">2</button>
+    <button onclick="appendtodisplay('3')">3</button>
+    <br>
+    <button onclick="appendtodisplay('/')">/</button>
+    <button onclick="appendtodisplay('0')">0</button>
+    <button onclick="appendtodisplay('.')">.</button>
+    <button onclick="calculator()">=</button>
+    <br>
+    <button onclick="clear()">C</button>
+  </div>
+</div>
+<script>
+  const display = document.getElementById("display");
+  function appendtodisplay(input) {
+    display.value +=input;
+  }
+  function clear() {
+    display.value = " ";
+  }
+  function calculator() {
+    try {
+      display.value = eval(display.value);
+    } catch (error) {
+      display.value = "error";
+    }
+  }
+</script>
+  </body>
+</html>
