@@ -3,6 +3,7 @@
   padding: 1px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition : 1s background-color;
 }
 body{
   min-height: 100vh;
